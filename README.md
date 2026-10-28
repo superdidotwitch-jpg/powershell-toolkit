@@ -8,6 +8,21 @@ Three small PowerShell scripts for checking and maintaining a Windows 11 laptop.
 | `hardening-check.ps1` | Checks Defender real-time and tamper protection, virus definition date, all three firewall profiles, UAC, the last installed update, and which user accounts are enabled | No, read only |
 | `temp-cleanup.ps1` | Finds files in the user temp folder older than 7 days, shows the count and size, and deletes them only after you type Y | Yes, after confirmation |
 
+## How the cleanup stays safe
+
+Only one script changes anything, and it never deletes without asking first:
+
+```mermaid
+flowchart TD
+    A[Start temp-cleanup.ps1] --> B[Look in the user temp folder]
+    B --> C[Keep only files older than 7 days]
+    C --> D[Show how many files and how much space]
+    D --> E{Type Y to delete?}
+    E -- anything else --> F([Stop, nothing deleted])
+    E -- Y --> G[Delete the old files]
+    G --> H([Done, files still in use are skipped])
+```
+
 ## How to use
 
 1. Download the scripts into a folder, for example `C:\Users\<you>\Toolkit`.
