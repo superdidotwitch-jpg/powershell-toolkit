@@ -1,6 +1,6 @@
 # PowerShell Toolkit
 
-Three small PowerShell scripts for checking and maintaining a Windows 11 laptop. Built as project 23 of my 25-project IT skills tracker, alongside my [Homelab v2](https://github.com/superdidotwitch-jpg/homelab-v2) build.
+Three small PowerShell scripts for checking and maintaining a Windows 11 laptop. Built as project 23 of my 25-project IT skills tracker, alongside my [Homelab v2](https://github.com/SuperDidZero/homelab-v2) build.
 
 | Script | What it does | Changes anything? |
 | --- | --- | --- |
