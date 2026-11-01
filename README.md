@@ -48,6 +48,7 @@ Scripts downloaded from the internet are marked as blocked by Windows. Read them
 === Health report ===
 Computer:  LAPTOP
 Windows:   Microsoft Windows 11 Home build 26300
+Checked:   01/11/2026 10:00:00
 Uptime:    0 days, 2 hours
 
 Drives:
